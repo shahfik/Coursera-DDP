@@ -53,5 +53,5 @@ A simple 3 step process allows the user to quickly learn to use the application.
 
 ## Output
 
-The output of the presentation is shown in the Prediction
+The output of the presentation is shown in the Prediction tab. For each row in the uploaded file, the application predicts the classification based on the parameters.
 
