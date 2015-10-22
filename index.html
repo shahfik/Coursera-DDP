@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Project">
+  <meta name="author" content="Shahfik Amasha">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Project</h1>
+    <h2></h2>
+    <p>Shahfik Amasha<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Predictive Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The application showcases a simple 3-step process for a user to run a predictive algorithm based on Random Forest using a Web UI.</li>
+<li>It builds upon the Practical Machine Learning course project where movement parameters are classfied into one of five classes.</li>
+<li>An RData is used to load the environment parameters without having to run the modelling each time the application loads.</li>
+</ul>
+
+<p>Shiny App: <a href="https://shahfik.shinyapps.io/project">https://shahfik.shinyapps.io/project</a> </p>
+
+<p>GitHub Repo: <a href="https://github.com/shahfik/Coursera-DDP">https://github.com/shahfik/Coursera-DDP</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>3-Step Process</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A simple 3 step process allows the user to quickly learn to use the application.</p>
+
+<ol>
+<li>Download and edit the template data file.</li>
+<li>Upload the file.</li>
+<li>Download the results.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Random Forest Model</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>## randomForest(formula = classe ~ ., data = data_train_new, ntree = 500, 
+##     mtry = 7, importance = TRUE)
+</code></pre>
+
+<pre><code>##      A    B    C    D    E  class.error
+## A 5579    0    0    0    1 0.0001792115
+## B    6 3789    2    0    0 0.0021069265
+## C    0    3 3418    1    0 0.0011689071
+## D    0    0    6 3209    1 0.0021766169
+## E    0    1    0    4 3602 0.0013861935
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The output of the presentation is shown in the Prediction</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Predictive Application'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='3-Step Process'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Random Forest Model'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Output'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
